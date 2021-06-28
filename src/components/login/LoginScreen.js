@@ -1,9 +1,10 @@
 import React from 'react'
 
-export const LoginScreen = () => {
+export const LoginScreen = ({history}) => {
 
     const handleLogin = () =>{
-        console.log('click')
+        // history.push('/login');
+        history.replace('/');
     }
     return (
         <div className="container mt-5">
