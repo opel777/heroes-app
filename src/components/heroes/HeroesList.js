@@ -1,8 +1,9 @@
 import React from 'react'
-import {getHeroesByPublisher} from '../../selector/getHeroesByPublisher';
+import { getHeroesByPublisher} from '../../selector/getHeroesByPublisher';
+
 
 export const HeroList = ({publisher}) => {
-    const heroes = getHeroesByPublisher( publisher );
+    const heroes = getHeroesByPublisher( publisher);
     return (
         <ul>
             {

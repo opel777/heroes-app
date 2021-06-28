@@ -1,9 +1,9 @@
-import React from 'react'
-import { Navbar} from '../components/ui/Navbar'
-import {Switch,Route,Redirect} from 'react-router-dom'
-import { MarvelScreen } from '../components/marvel/MarvelScreen'
-import { HeroScreen } from '../components/heroes/HeroScreen'
-import { DcScreen} from '../components/dc/DcScreen'
+import React from 'react';
+import { Navbar} from '../components/ui/Navbar';
+import {Switch,Route,Redirect} from 'react-router-dom';
+import { MarvelScreen } from '../components/marvel/MarvelScreen';
+import { HeroScreen } from '../components/heroes/HeroScreen';
+import { DcScreen} from '../components/dc/DcScreen';
 
 export const DashboardRoutes = () => {
     return (
