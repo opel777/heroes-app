@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { getHeroesByPublisher} from '../../selector/getHeroesByPublisher';
 
 
@@ -7,7 +7,7 @@ export const HeroList = ({publisher}) => {
     return (
         <ul>
             {
-                heroes.map(hero =>(
+                heroes.map(hero => (
                     <li key = {hero.id}>
                         {hero.superhero}
                     </li>

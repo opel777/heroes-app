@@ -7,7 +7,7 @@ import {
 
 import {LoginScreen} from '../components/login/LoginScreen';
 
-import { DashboardRoutes} from './DashboardRoutes'
+import { DashboardRoutes} from './DashboardRoutes';
 
 export const AppRouter = () => {
     return (
