@@ -1,12 +1,19 @@
-import React from 'react'
-import { heroes } from '../../data/heroes'
+import React from 'react';
+import { heroes } from '../../data/heroes';
+import { useForm } from '../../hooks/useForm';
 import { HeroCard } from '../heroes/HeroCard';
 
 export const SearchScreen = () => {
 
     const heroesFiltered = heroes;
-    const handleSearch = () =>{
-        console.log('??')
+    const [ formValues,handleInputChange] = useForm({
+        searchText:''
+    });
+    const {searchText} = formValues;
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        console.log(searchText);
     }
     return (
         <div>
@@ -17,7 +24,7 @@ export const SearchScreen = () => {
                 <div className="col-5"><h4>Search Form</h4>
                 <hr />
                 <form onSubmit={ handleSearch}>
-                    <input type="text" placeholder="Find your hero" className="form-control"/>
+                    <input type="text" placeholder="Find your hero" className="form-control" name="searchText" autocomplete="off" value={searchText} onChange={handleInputChange}/>
                     <button type="submit" className="btn m-1 btn-block btn-outline-primary">Search..</button>
                 </form>
             </div>
