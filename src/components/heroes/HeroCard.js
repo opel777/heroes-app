@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 export const HeroCard = ({
     id,
     superhero,
-    publisher,
+    // publisher,
     alter_ego,
     first_appearance,
     characters,
